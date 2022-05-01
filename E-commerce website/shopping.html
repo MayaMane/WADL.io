@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Shopping Brand</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='shopping.css'>
+    <script src='main.js'></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    <script src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"></script>
+</head>
+
+<body>
+    <!--Navigation-->
+
+      <nav class="navbar navbar-expand-md navbar-light  sticky-top" style="background-color:rgb(93, 138, 158) ;">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#"><img src="data:image/png;base64,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"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Deal</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="Dashboard.html">Dashboard</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+    <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img class="d-block w-100" id="img1" src="https://img.freepik.com/free-photo/pretty-girls-exploring-shops-mall_23-2147669973.jpg" alt="First slide">
+                <div class="carousel-caption">
+                    <h1>Shopping</h1>
+                    <h2>50% Discount for this Season</h2>
+                    <a href="#" class="btn btn-danger text-uppercase mt-4">Our Product</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="https://www.parkgrandlondon.co.uk/blog/wp-content/uploads/2015/04/Shopping-paddington.jpg" alt="Second slide">
+
+                <div class="carousel-caption">
+                    <h1>Shopping</h1>
+                    <h2>50% Discount for this Season</h2>
+                    <a href="#" class="btn btn-danger text-uppercase mt-4">Our Product</a>
+                </div>
+            </div>
+            <div class="carousel-item">
+                <img class="d-block w-100" src="images/img4.jpg" alt="Second slide">
+
+                <div class="carousel-caption">
+                    <h1>Shopping</h1>
+                    <h2>50% Discount for this Season</h2>
+                    <a href="#" class="btn btn-danger text-uppercase mt-4">Our Product</a>
+                </div>
+            </div>
+        </div>
+        <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+        </a>
+        <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+        </a>
+    </div>
+
+    <section class="serviceoffers" id="serviceid">
+        <div class="container headings text-center">
+            <h1 class="text-center font-weight-bold pt-3">Products</h1>
+            
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <ol class="carousel-indicators">
+                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+                <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+            </ol>
+            <div class="carousel-inner container">
+                <div class="carousel-item active">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/img1.jpeg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12 card-second">
+                            <div class="box">
+                                <a href="#"><img src="images/img2.jpeg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/img3.jpeg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth1.png" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth2.jpg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth3.jpg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth4.jpg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth5.jpg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+
+                        <div class="col-lg-4 col-md-4 col-12">
+                            <div class="box">
+                                <a href="#"><img src="images/cloth6.jpg" class="image-fluidi img-thumbnail"></a>
+                                <h2>Lorem ipsum</h2>
+                                <p class="m-4">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste inventore
+                                     </p>
+                                <button id="mybtn">Buy Now</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+    </section>
+
+        <!--Deal of the day-->
+        <section class="header-extradiv">
+            <div class="container">
+                <h1>Deal of the Day</h1>
+                <div class="row">
+                    <div class="extra-div col-lg-4 col-md-4 col-12">
+                        <a href="#"><img src="images/EasyPayment.jpg"></a>
+                        <h2>Free shipping</h2>
+                        
+                    </div>
+                    <div class="extra-div col-lg-4 col-md-4 col-12">
+                        <a href="#"><img src="images/freeShipping.jpg"></a>
+                        <h2>10 days replacement</h2>
+                        
+                    </div>
+                    <div class="extra-div col-lg-4 col-md-4 col-12">
+                        <a href="#"><img src="images/replacement.jpg"></a>
+                        <h2>Easy Replacement</h2>
+                        
+                    </div>
+                </div>
+            </div>
+        </section>
+
+       <!--contact us-->
+        <section class="ContactUs" id="contactid">
+            <div class="container headings text-center">
+                <h1 class="text-center font-weight-bold pt-3">CONTACT US</h1>
+                <p>Lorem Ipsum. Proin gravida nibh vel velit auctor aliquet. Aenean sollicitudin,
+                    lorem quis bibendum nisi elit consequat ipsu.</p>
+            </div>
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-8 col-md-8 col-10 offset-lg-2 offset-md-2 col-1">
+    
+                        <form>
+                            <div class="form-group">
+                                <input type="text" class="form-control" id="username" aria-describedby="emailHelp"
+                                    placeholder="Name" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group">
+                                <input type="email" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Email" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group">
+                                <input type="number" class="form-control" id="exampleInputEmail1"
+                                    aria-describedby="emailHelp" placeholder="Phone Number" required autocomplete="off">
+                            </div>
+    
+                            <div class="form-group">
+                                <textarea class="form-control" rows="4" id="comment"
+                                    placeholder="Add Description"></textarea>
+                            </div>
+                            <div class="d-flex justify-content-center form-button">
+                                <button type="submit" class="btn btn-primary">Submit</button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <!--footer-->
+        <footer class="footersection" id="footerdiv">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-md-6col col-12 footer-div">
+                        <h3>Shopping</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum deleniti officia accusantium.
+                            Tempora eius explicabo assumenda in,
+                            suscipit laboriosam commodi impedit, magni, quibusdam quas atque? Repellendus alias nesciunt
+                            quidem vitae?
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6col col-12 footer-div">
+                        <h3>Latest News</h3>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Eum deleniti officia accusantium.
+                            Tempora eius explicabo assumenda in,
+                            suscipit laboriosam commodi impedit, magni, quibusdam quas atque? Repellendus alias nesciunt
+                            quidem vitae?
+                        </p>
+                    </div>
+                    <div class="col-lg-4 col-md-6col col-12 footer-div">
+                        <h3>Contact Us</h3>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fa fa-map-marker"></i></div>
+                            <div class="text">Shop Guru, Pune.</div>
+                        </div>
+                        <br>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fa fa-phone"></i></div>
+                            <div class="text">8080065470</div>
+                        </div>
+                        <br>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fa fa-fax"></i></div>
+                            <div class="text">8127907409</div>
+                        </div>
+                        <br>
+                        <div class="contact-item">
+                            <div class="icon"><i class="fa fa-envelope-o"></i></div>
+                            <div class="text">contact@123.org</div>
+                        </div>
+                    </div>
+    
+                </div>
+                <div class="mt-5 text-center ">
+                    <p>Copyright Â© 2019. All Rights Reserved.</p>
+                </div>
+    
+    
+            </div>
+        </footer>
+
+
+
+</body>
+
+</html>
